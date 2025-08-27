@@ -1,11 +1,223 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portofolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio — Nama Kamu</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    :root { --brand: #01AA85; }
+    body { background: #f7f9fb; }
+    .navbar { background: white; }
+    .hero {
+      background: linear-gradient(135deg, rgba(1,170,133,.12), rgba(20,90,242,.08));
+      border-radius: 18px;
+      padding: 48px 28px;
+      margin-top: 24px;
+    }
+    .tag {
+      font-size: .85rem; background: rgba(1,170,133,.12); color: #016d57;
+      padding: .3rem .6rem; border-radius: 999px; margin-right: .35rem;
+    }
+    .card { border: 0; border-radius: 18px; box-shadow: 0 10px 24px rgba(0,0,0,.06); }
+    .card img { border-top-left-radius: 18px; border-top-right-radius: 18px; }
+    .btn-brand { background: var(--brand); color: #fff; }
+    .btn-brand:hover { background: #019b79; color:#fff; }
+    footer { color: #6b7280; }
+  </style>
 </head>
 <body>
-  <h1>PORTOFOLIO</h1>
+
+<nav class="navbar navbar-expand-lg shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#"><i class="bi bi-terminal"></i> Nama Kamu</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a href="#projects" class="nav-link">Project</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skill</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+  <section class="hero">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <span class="tag">Full-Stack / Web</span>
+        <span class="tag">Laminas • Laravel • React</span>
+        <h1 class="display-6 fw-bold mt-3">Hai, saya <span class="text-success">Nama Kamu</span>.</h1>
+        <p class="lead text-secondary">
+          Saya membuat aplikasi backoffice retail/apotek, banking, e-commerce, dan juga mengajar kelas praktek coding.
+        </p>
+        <a href="#projects" class="btn btn-brand me-2"><i class="bi bi-boxes"></i> Lihat Project</a>
+        <a href="https://github.com/username" target="_blank" class="btn btn-outline-dark">
+          <i class="bi bi-github"></i> GitHub
+        </a>
+      </div>
+      <div class="col-lg-5">
+        <div class="bg-white p-4 rounded-4 h-100">
+          <h5 class="mb-3"><i class="bi bi-graph-up-arrow"></i> Singkat</h5>
+          <ul class="list-unstyled m-0">
+            <li class="mb-2"><i class="bi bi-check-circle me-2 text-success"></i> 5+ tahun pengalaman</li>
+            <li class="mb-2"><i class="bi bi-check-circle me-2 text-success"></i> Fokus: report backoffice, banking, e-commerce</li>
+            <li class="mb-2"><i class="bi bi-check-circle me-2 text-success"></i> Pengajar kelas praktek coding</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-5">
+    <div class="d-flex align-items-center justify-content-between mb-3">
+      <h2 class="h3 m-0">Project Terbaru</h2>
+      <a class="link-secondary small" href="https://github.com/username?tab=repositories" target="_blank">
+        Lihat semua <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
+
+    <div class="row g-4">
+      <!-- Project 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="https://picsum.photos/640/360?random=1" alt="thumbnail project">
+          <div class="card-body">
+            <h5 class="card-title">Backoffice Apotek</h5>
+            <p class="card-text text-secondary">Dashboard reporting stok, penjualan, resep, dan integrasi barcode.</p>
+            <div class="d-flex gap-2">
+              <span class="badge bg-light text-dark">Laminas</span>
+              <span class="badge bg-light text-dark">MySQL</span>
+              <span class="badge bg-light text-dark">Bootstrap</span>
+            </div>
+          </div>
+          <div class="card-footer bg-white">
+            <a href="https://github.com/username/nama-repo-1" class="btn btn-sm btn-dark" target="_blank">
+              <i class="bi bi-github"></i> Source
+            </a>
+            <a href="https://username.github.io/nama-repo-1" class="btn btn-sm btn-outline-secondary ms-2" target="_blank">
+              Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Duplikasi kartu ini untuk project berikutnya -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="https://picsum.photos/640/360?random=2" alt="thumbnail project">
+          <div class="card-body">
+            <h5 class="card-title">Aplikasi Banking</h5>
+            <p class="card-text text-secondary">Transfer, mutasi, notifikasi OTP, dan audit trail.</p>
+            <div class="d-flex gap-2">
+              <span class="badge bg-light text-dark">Laravel</span>
+              <span class="badge bg-light text-dark">Redis</span>
+              <span class="badge bg-light text-dark">REST API</span>
+            </div>
+          </div>
+          <div class="card-footer bg-white">
+            <a href="https://github.com/username/nama-repo-2" class="btn btn-sm btn-dark" target="_blank">
+              <i class="bi bi-github"></i> Source
+            </a>
+            <a href="https://username.github.io/nama-repo-2" class="btn btn-sm btn-outline-secondary ms-2" target="_blank">
+              Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="https://picsum.photos/640/360?random=3" alt="thumbnail project">
+          <div class="card-body">
+            <h5 class="card-title">E-Commerce</h5>
+            <p class="card-text text-secondary">Katalog, cart, pembayaran, dan laporan omzet.</p>
+            <div class="d-flex gap-2">
+              <span class="badge bg-light text-dark">React</span>
+              <span class="badge bg-light text-dark">Node</span>
+              <span class="badge bg-light text-dark">PostgreSQL</span>
+            </div>
+          </div>
+          <div class="card-footer bg-white">
+            <a href="https://github.com/username/nama-repo-3" class="btn btn-sm btn-dark" target="_blank">
+              <i class="bi bi-github"></i> Source
+            </a>
+            <a href="https://username.github.io/nama-repo-3" class="btn btn-sm btn-outline-secondary ms-2" target="_blank">
+              Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="pb-5">
+    <h2 class="h3">Skill</h2>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="bg-white p-4 rounded-4 h-100">
+          <h6 class="text-uppercase text-secondary">Backend</h6>
+          <ul class="m-0">
+            <li>Laminas (Zend), Laravel</li>
+            <li>Node.js</li>
+            <li>REST/GraphQL</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="bg-white p-4 rounded-4 h-100">
+          <h6 class="text-uppercase text-secondary">Frontend</h6>
+          <ul class="m-0">
+            <li>React, jQuery</li>
+            <li>Bootstrap, Tailwind</li>
+            <li>Axios, SweetAlert2</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="bg-white p-4 rounded-4 h-100">
+          <h6 class="text-uppercase text-secondary">Lainnya</h6>
+          <ul class="m-0">
+            <li>MySQL/PostgreSQL, Redis</li>
+            <li>CI/CD, Docker dasar</li>
+            <li>Git & GitHub Actions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="pb-5">
+    <h2 class="h3">Kontak</h2>
+    <p class="text-secondary">Terbuka untuk project freelance dan kolaborasi.</p>
+    <div class="d-flex gap-2">
+      <a class="btn btn-dark" href="mailto:emailkamu@domain.com"><i class="bi bi-envelope"></i> Email</a>
+      <a class="btn btn-outline-dark" href="https://wa.me/6281234567890" target="_blank"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+      <a class="btn btn-outline-dark" href="https://linkedin.com/in/username" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
+    </div>
+  </section>
+</main>
+
+<footer class="py-4">
+  <div class="container text-center small">
+    © <span id="y"></span> Nama Kamu · Dibuat dengan GitHub Pages
+  </div>
+</footer>
+
+<!-- jQuery + Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // contoh kecil pakai jQuery: auto set tahun
+  $('#y').text(new Date().getFullYear());
+</script>
 </body>
 </html>
