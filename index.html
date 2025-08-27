@@ -1,223 +1,1106 @@
-<!doctype html>
-<html lang="id">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portofolio — Nama Kamu</title>
-
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-  <style>
-    :root { --brand: #01AA85; }
-    body { background: #f7f9fb; }
-    .navbar { background: white; }
-    .hero {
-      background: linear-gradient(135deg, rgba(1,170,133,.12), rgba(20,90,242,.08));
-      border-radius: 18px;
-      padding: 48px 28px;
-      margin-top: 24px;
-    }
-    .tag {
-      font-size: .85rem; background: rgba(1,170,133,.12); color: #016d57;
-      padding: .3rem .6rem; border-radius: 999px; margin-right: .35rem;
-    }
-    .card { border: 0; border-radius: 18px; box-shadow: 0 10px 24px rgba(0,0,0,.06); }
-    .card img { border-top-left-radius: 18px; border-top-right-radius: 18px; }
-    .btn-brand { background: var(--brand); color: #fff; }
-    .btn-brand:hover { background: #019b79; color:#fff; }
-    footer { color: #6b7280; }
-  </style>
-</head>
-<body>
-
-<nav class="navbar navbar-expand-lg shadow-sm">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#"><i class="bi bi-terminal"></i> Nama Kamu</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div id="nav" class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a href="#projects" class="nav-link">Project</a></li>
-        <li class="nav-item"><a href="#skills" class="nav-link">Skill</a></li>
-        <li class="nav-item"><a href="#contact" class="nav-link">Kontak</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<main class="container">
-  <section class="hero">
-    <div class="row align-items-center g-4">
-      <div class="col-lg-7">
-        <span class="tag">Full-Stack / Web</span>
-        <span class="tag">Laminas • Laravel • React</span>
-        <h1 class="display-6 fw-bold mt-3">Hai, saya <span class="text-success">Nama Kamu</span>.</h1>
-        <p class="lead text-secondary">
-          Saya membuat aplikasi backoffice retail/apotek, banking, e-commerce, dan juga mengajar kelas praktek coding.
-        </p>
-        <a href="#projects" class="btn btn-brand me-2"><i class="bi bi-boxes"></i> Lihat Project</a>
-        <a href="https://github.com/username" target="_blank" class="btn btn-outline-dark">
-          <i class="bi bi-github"></i> GitHub
-        </a>
-      </div>
-      <div class="col-lg-5">
-        <div class="bg-white p-4 rounded-4 h-100">
-          <h5 class="mb-3"><i class="bi bi-graph-up-arrow"></i> Singkat</h5>
-          <ul class="list-unstyled m-0">
-            <li class="mb-2"><i class="bi bi-check-circle me-2 text-success"></i> 5+ tahun pengalaman</li>
-            <li class="mb-2"><i class="bi bi-check-circle me-2 text-success"></i> Fokus: report backoffice, banking, e-commerce</li>
-            <li class="mb-2"><i class="bi bi-check-circle me-2 text-success"></i> Pengajar kelas praktek coding</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="py-5">
-    <div class="d-flex align-items-center justify-content-between mb-3">
-      <h2 class="h3 m-0">Project Terbaru</h2>
-      <a class="link-secondary small" href="https://github.com/username?tab=repositories" target="_blank">
-        Lihat semua <i class="bi bi-arrow-right"></i>
-      </a>
-    </div>
-
-    <div class="row g-4">
-      <!-- Project 1 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100">
-          <img src="https://picsum.photos/640/360?random=1" alt="thumbnail project">
-          <div class="card-body">
-            <h5 class="card-title">Backoffice Apotek</h5>
-            <p class="card-text text-secondary">Dashboard reporting stok, penjualan, resep, dan integrasi barcode.</p>
-            <div class="d-flex gap-2">
-              <span class="badge bg-light text-dark">Laminas</span>
-              <span class="badge bg-light text-dark">MySQL</span>
-              <span class="badge bg-light text-dark">Bootstrap</span>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+      <meta name="description" content="Portofolio Web Developer Sri Hartono">
+      <meta name="keywords" content="Portofolio, Web Developer, PHP Developer, Software Engineer, Programmer, IT">
+      <meta name="author" content="Sri Hartono">
+      <meta property="og:type" content="website">
+      <meta property="og:site_name" content="srihartono.my.id">
+      <meta property="og:url" content="https://hartonoosh.github.io/" >
+      <meta property="og:title" content="Portofolio Sri Hartono" >
+      <meta property="og:description" content="Web Developer" >
+      <meta property="og:image" content="assets/images/srihartono.png" >
+      <meta property="og:image:alt" content="Sri Hartono" >
+      <meta property="og:image:type" content="image/jpeg">
+      <meta property="og:image:width" content="493">
+      <meta property="og:image:height" content="280">
+      <title>Sri Hartono - Portofolio</title>
+      <link rel="shortcut icon" href="assets/favicon.ico">
+      <script type="text/javascript">
+         const HOST_URL = "/";
+      </script>
+      <link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic,500,500italic,700,900,900italic,700italic%7COswald:400,300,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" type="text/css" href="assets/css/scroll.css" />
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+      <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" />
+      <link rel="stylesheet" type="text/css" href="assets/css/portfolio.css" />
+      <link rel="stylesheet" type="text/css" href="assets/css/carousel.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+      <script type="text/javascript" src="assets/js/jquery-2.0.3.min.js"></script>
+      <script type="text/javascript" src="assets/js/progressbar.js"></script>
+      <script src="assets/js/modernizr.custom.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <style>
+         .cover-portofolio{
+         max-width: 700px;
+         max-height: 475px;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="container" class="container">
+         <!-- Left Menu / Logo-->
+         <aside class="menu" id="menu">
+            <div class="logo">
+               <!-- Logo image-->
+               <a href="/">
+               <img src="assets/images/Logo.png" width="140" height="140" alt=""/> 
+               </a>
+               <!-- Logo name-->
+               <a href="/">
+               <span>Sri Hartono</span>
+               </a>
+               <button class="change-language">
+               <img id="language-topbar" src="assets/images/uk.png" alt="Indonesia">
+               </button>
             </div>
-          </div>
-          <div class="card-footer bg-white">
-            <a href="https://github.com/username/nama-repo-1" class="btn btn-sm btn-dark" target="_blank">
-              <i class="bi bi-github"></i> Source
-            </a>
-            <a href="https://username.github.io/nama-repo-1" class="btn btn-sm btn-outline-secondary ms-2" target="_blank">
-              Demo
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Duplikasi kartu ini untuk project berikutnya -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100">
-          <img src="https://picsum.photos/640/360?random=2" alt="thumbnail project">
-          <div class="card-body">
-            <h5 class="card-title">Aplikasi Banking</h5>
-            <p class="card-text text-secondary">Transfer, mutasi, notifikasi OTP, dan audit trail.</p>
-            <div class="d-flex gap-2">
-              <span class="badge bg-light text-dark">Laravel</span>
-              <span class="badge bg-light text-dark">Redis</span>
-              <span class="badge bg-light text-dark">REST API</span>
+            <!-- Mobile Navigation--> 
+            <a href="#menu1" class="menu-link"></a>
+            <div class="background-language">
+               <span class="language-sidebar" style="color: #000;">
+               <img id="language-sidebar" src="assets/images/uk.png" style="height: 12px;" alt="English"> 
+               <span id="text-language">English</span>
+               </span>
             </div>
-          </div>
-          <div class="card-footer bg-white">
-            <a href="https://github.com/username/nama-repo-2" class="btn btn-sm btn-dark" target="_blank">
-              <i class="bi bi-github"></i> Source
-            </a>
-            <a href="https://username.github.io/nama-repo-2" class="btn btn-sm btn-outline-secondary ms-2" target="_blank">
-              Demo
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="card h-100">
-          <img src="https://picsum.photos/640/360?random=3" alt="thumbnail project">
-          <div class="card-body">
-            <h5 class="card-title">E-Commerce</h5>
-            <p class="card-text text-secondary">Katalog, cart, pembayaran, dan laporan omzet.</p>
-            <div class="d-flex gap-2">
-              <span class="badge bg-light text-dark">React</span>
-              <span class="badge bg-light text-dark">Node</span>
-              <span class="badge bg-light text-dark">PostgreSQL</span>
+            <!-- Left Navigation-->
+            <nav id="menu1" role="navigation">
+               <a href="#chapterintroduction"><span id="link_introduction" class="active">Home</span></a>
+               <a href="#chapterabout"><span id="link_about">About</span></a> 
+               <a href="#chapterskills"><span id="link_skills">Skills</span></a> 
+               <a href="#chapterexperience"><span id="link_experience">Experience</span></a> 
+               <a href="#chaptereducation"><span id="link_education">Education</span></a> 
+               <a href="#chapterportfolio"><span id="link_portfolio">Portfolio</span></a>
+               <a href="#chaptercontact"><span id="link_contact">Contact</span></a>
+            </nav>
+            <div class="social">
+               <a href="https://www.facebook.com/Sri.Hartonoo" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+               <a href="https://twitter.com/hartonoosh" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+               <a href="https://www.instagram.com/hartonoosh" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
             </div>
-          </div>
-          <div class="card-footer bg-white">
-            <a href="https://github.com/username/nama-repo-3" class="btn btn-sm btn-dark" target="_blank">
-              <i class="bi bi-github"></i> Source
-            </a>
-            <a href="https://username.github.io/nama-repo-3" class="btn btn-sm btn-outline-secondary ms-2" target="_blank">
-              Demo
-            </a>
-          </div>
-        </div>
+         </aside>
+         <!-- Go to top link for mobile device --> 
+         <a href="#menu" class="totop-link">Go to the top</a>
+         <div class="content-scroller">
+            <div class="content-wrapper">
+               <!-- Introduction -->
+               <article class="content introduction noscroll jspScrollable" id="chapterintroduction">
+                  <div class="inner">
+                     <h2>
+                        <span id="introduction-1">Hello, I'm</span><br>
+                        Sri Hartono
+                     </h2>
+                     <span class="title">Full Stack Developer</span>
+                  </div>
+                  <div id="owl-demo" class="owl-carousel">
+                     <div class="item"><img src="assets/images/profile-1.jpg" alt="" /></div>
+                     <div class="item"><img src="assets/images/profile-2.jpg" alt="" /></div>
+                     <div class="item"><img src="assets/images/profile-3.jpg" alt="" /></div>
+                  </div>
+               </article>
+               <!-- About -->
+               <article class="content about white-bg" id="chapterabout">
+                  <div class="inner">
+                     <h2 id="about-1">About</h2>
+                     <div class="title-divider"></div>
+                     <div class="about-con">
+                        <ul>
+                           <li>
+                              <div class="row">
+                                 <div id="about-2" class="col-3">Name</div>
+                                 <div class="col-1">:</div>
+                                 <div class="col-8">Sri Hartono</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="row">
+                                 <div class="col-3">Email</div>
+                                 <div class="col-1">:</div>
+                                 <div class="col-8"><a href="mailto:srihartonohs@gmail.com">srihartonohs@gmail.com</a></div>
+                              </div>
+                           <li>
+                              <div class="row">
+                                 <div id="about-3" class="col-3">Phone</div>
+                                 <div class="col-1">:</div>
+                                 <div class="col-8"><a href="https://api.whatsapp.com/send?phone=6281210681590">0812-1068-1590</a></div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="row">
+                                 <div id="about-4" class="col-3">Age</div>
+                                 <div class="col-1">:</div>
+                                 <div id="about-10" class="col-8">29 <sup>th</sup></div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="row">
+                                 <div id="about-5" class="col-3">Address</div>
+                                 <div class="col-1">:</div>
+                                 <div class="col-8">Jl. Attahiriyah No.64C Pejaten Barat, Pasar Minggu, Jakarta Selatan</div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="row">
+                                 <div id="about-6" class="col-3">Nationality</div>
+                                 <div class="col-1">:</div>
+                                 <div class="col-8">Indonesia</div>
+                              </div>
+                           </li>
+                        </ul>
+                        <h3 id="about-7">Professional Profile</h3>
+                        <p id="about-8">
+                           Professional with 4+ years experience in website development and mobile development, Skilled in team collaboration, problem solving and project management.
+                           <br>
+                        </p>
+                        <a id="about-9" target="_blank" href="assets/resume/Sri%20Hartono.pdf" class="button">
+                        Download resume as PDF format
+                        </a>
+                     </div>
+                  </div>
+               </article>
+               <!-- Skills -->
+               <article class="content skills gray-bg" id="chapterskills">
+                  <div class="inner">
+                     <h2 id="skill-1">Skills</h2>
+                     <div class="title-divider"></div>
+                     <h3 id="skill-2">Just My Awesome Skills</h3>
+                     <p id="skill-3">
+                        Some of the professional skills I have in the field of full stack programming and the work I do.
+                     </p>
+                     <div class="skills-con">
+                        <div class="container-sub margin-top50">
+                           <div class="row">
+                              <div class="col-6 margin-bottom50">
+                                 <div class="col-6">
+                                    <span class="chart" data-percent="100"><span class="percent"></span> </span>
+                                 </div>
+                                 <div class="col-6 chart-text">
+                                    <h4>PHP</h4>
+                                    <p>Advanced, 5 years</p>
+                                 </div>
+                              </div>
+                              <div class="col-6 margin-bottom50">
+                                 <div class="col-6">
+                                    <span class="chart" data-percent="95"><span class="percent"></span> </span>
+                                 </div>
+                                 <div class="col-6 chart-text">
+                                    <h4>Javascript</h4>
+                                    <p>Advanced, 5 years</p>
+                                 </div>
+                              </div>
+                              <div class="col-6 margin-bottom50">
+                                 <div class="col-6">
+                                    <span class="chart" data-percent="70"><span class="percent"></span> </span>
+                                 </div>
+                                 <div class="col-6 chart-text">
+                                    <h4>Kotlin</h4>
+                                    <p>Intermediate, 1 years</p>
+                                 </div>
+                              </div>
+                              <div class="col-6 margin-bottom50">
+                                 <div class="col-6">
+                                    <span class="chart" data-percent="85"><span class="percent"></span> </span>
+                                 </div>
+                                 <div class="col-6 chart-text">
+                                    <h4>React JS</h4>
+                                    <p>Intermediate, 3 years</p>
+                                 </div>
+                              </div>
+                              <div class="col-6 margin-bottom50">
+                                 <div class="col-6">
+                                    <span class="chart" data-percent="95"><span class="percent"></span> </span>
+                                 </div>
+                                 <div class="col-6 chart-text">
+                                    <h4>PostgreSQL MySQL</h4>
+                                    <p>Advanced, 5 years</p>
+                                 </div>
+                              </div>
+                              <div class="col-6 margin-bottom50">
+                                 <div class="col-6">
+                                    <span class="chart" data-percent="95"><span class="percent"></span> </span>
+                                 </div>
+                                 <div class="col-6 chart-text">
+                                    <h4>Laravel</h4>
+                                    <p>Advanced, 4 years</p>
+                                 </div>
+                              </div>
+                              <div class="col-6">
+                                 <div class="col-6">
+                                    <span class="chart" data-percent="100"><span class="percent"></span> </span>
+                                 </div>
+                                 <div class="col-6 chart-text">
+                                    <h4>CodeIgniter</h4>
+                                    <p>Advanced, 5 years</p>
+                                 </div>
+                              </div>
+                              <div class="col-6">
+                                 <div class="col-6">
+                                    <span class="chart" data-percent="95"><span class="percent"></span> </span>
+                                 </div>
+                                 <div class="col-6 chart-text">
+                                    <h4>Laminas / Zend</h4>
+                                    <p>Advanced, 3 years</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="full-divider"></div>
+                        <div class="container-sub skill-list">
+                           <div class="row">
+                              <h3 id="skill-4">Knowledge</h3>
+                              <p id="skill-5">
+                                 Some of the knowledge I learned can help my future work.
+                              </p>
+                              <div class="col-4 margin-top10">
+                                 <ul>
+                                    <li>Laminas Framework</li>
+                                    <li>Zend Framework</li>
+                                    <li>Laravel</li>
+                                    <li>Codeigniter</li>
+                                 </ul>
+                              </div>
+                              <div class="col-4 margin-top10">
+                                 <ul>
+                                    <li>Kotlin</li>
+                                    <li>HTML & CSS</li>
+                                    <li>Golang</li>
+                                    <li>Python</li>
+                                 </ul>
+                              </div>
+                              <div class="col-4 margin-top10">
+                                 <ul>
+                                    <li>NodeJS</li>
+                                    <li>MySQL</li>
+                                    <li>PostgreSQL</li>
+                                    <li>Firebase</li>
+                                 </ul>
+                              </div>
+                              <div class="col-4 margin-top10">
+                                 <ul>
+                                    <li>Git Control CI/CD</li>
+                                    <li>REST API</li>
+                                    <li>UI / UX</li>
+                                    <li>Photo Editing</li>
+                                 </ul>
+                              </div>
+                              <div class="col-4 margin-top10">
+                                 <ul>
+                                    <li>Video Editing</li>
+                                    <li>Computer Hardware</li>
+                                    <li>IT Hardware Support</li>
+                                    <li>Installation CCTV</li>
+                                 </ul>
+                              </div>
+                              <div class="col-4 margin-top10">
+                                 <ul>
+                                    <li>Communication Skills</li>
+                                    <li>Negotation</li>
+                                    <li>Problem Solving</li>
+                                    <li>Team Work</li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="full-divider"></div>
+                        <div class="container-sub">
+                           <div class="row">
+                              <h3 id="skill-6">Language Skills</h3>
+                              <p id="skill-7">
+                                 The language I use to work and communicate every day.
+                              </p>
+                              <div class="progressbar-main margin-top50">
+                                 <div class="progress-bar-description">English</div>
+                                 <div id="progressBar" class="progress">
+                                    <div class="progress-value"></div>
+                                 </div>
+                              </div>
+                              <div class="progressbar-main margin-top40">
+                                 <div class="progress-bar-description">Bahasa Indonesia</div>
+                                 <div id="progressBar2" class="progress">
+                                    <div class="progress-value"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </article>
+               <!-- Experience -->
+               <article class="content experience white-bg" id="chapterexperience">
+                  <div class="inner">
+                     <h2 id="experience-1">Experience</h2>
+                     <div class="title-divider"></div>
+                     <h3 id="experience-2">11 Years Experience!</h3>
+                     <p id="experience-3">
+                        Various experiences in working for more than 11 years have made me a professional in the field that I am currently working on and will continue to develop over time.
+                     </p>
+                     <div class="experience-con">
+                        <div class="container-sub">
+                           <div class="full-divider"></div>
+                           <div class="row">
+                              <div class="experience-details">
+                                 <div class="col-6 margin-bottom50 margin-top50">
+                                    <div class="col-3 icon-block"><i class="fa fa-code"></i></div>
+                                    <div class="flot-left">
+                                       <h5>PT. FUNDO SUKSES BERSAMA</h5>
+                                       <h4 id="experience-32">Software Engineer</h4>
+                                       <span id="experience-33">Okt 2022 - Present</span>
+                                    </div>
+                                 </div>
+                                 <div class="col-6 margin-bottom50 margin-top50 no-margin-top">
+                                    <ul>
+                                       <li id="experience-34">Developing the Ubbu Toko website for marketplace needs.</li>
+                                       <li id="experience-35">Developing the Ubbu Niaga website for invoice payment needs.</li>
+                                       <li id="experience-36">Developing the Ubbu Kirim website for goods delivery platform needs.</li>
+                                       <li id="experience-37">Developing the Ubbu Pay website for online payment platform needs.</li>
+                                       <li id="experience-38">Developing the Ubbu Kontak website for notification platform needs for various methods.</li>
+                                       <li id="experience-39">Developing the Ubbu Dashboard website for Ubbu website analysis and maintenance needs.</li>
+                                       <li id="experience-40">Developing the Fundo website for the company's invoice auction platform needs.</li>
+                                       <li id="experience-41">Work as a team using Git Control.</li>
+                                       <li id="experience-42">Set the runner and vhost on the Linux server for website connections.</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="full-divider"></div>
+                              <div class="experience-details">
+                                 <div class="col-6 margin-bottom50 margin-top50">
+                                    <div class="col-3 icon-block"><i class="fa fa-graduation-cap"></i></div>
+                                    <div class="flot-left">
+                                       <h5>UNIVERSITAS ISLAM ATTAHIRIYAH</h5>
+                                       <h4 id="experience-4">Assistant Lecturer</h4>
+                                       <span id="experience-5">Aug 2022 - Jan 2023</span>
+                                    </div>
+                                 </div>
+                                 <div class="col-6 margin-bottom50 margin-top50 no-margin-top">
+                                    <ul>
+                                       <li id="experience-6">Assisting lecturers in teaching students in class.</li>
+                                       <li id="experience-7">Helping lecturers compile syllabus.</li>
+                                       <li id="experience-8">Compile complete exam questions with answers.</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="full-divider"></div>
+                              <div class="experience-details">
+                                 <div class="col-6 margin-bottom50 margin-top50">
+                                    <div class="col-3 icon-block"><i class="fa fa-code"></i></div>
+                                    <div class="flot-left">
+                                       <h5>APOTEK ROXY</h5>
+                                       <h5>(PT. KREANOVA PHARMARET)</h5>
+                                       <h4 id="experience-9">Web Developer</h4>
+                                       <span id="experience-10">Feb 2021 - Sep 2022</span>
+                                    </div>
+                                 </div>
+                                 <div class="col-6 margin-bottom50 margin-top50 no-margin-top">
+                                    <ul>
+                                       <li id="experience-11">Develop and maintain an E-Procurement website for the needs of the Pharmacy purchasing division.</li>
+                                       <li id="experience-12">Develop and maintain the E-SKP website to increase pharmacy customer surveys.</li>
+                                       <li id="experience-13">Develop and maintain Backoffice websites for the needs of all Pharmacy divisions.</li>
+                                       <li id="experience-43">Develop and maintain an E-Document website for the needs of the Legal & HRD division.</li>
+                                       <li id="experience-44">Creating API integration for taking stock of pharmacy goods from 3rd parties.</li>
+                                       <li id="experience-45">Take part in the development of company technology.</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="full-divider"></div>
+                              <div class="experience-details">
+                                 <div class="col-6 margin-bottom50 margin-top50">
+                                    <div class="col-3 icon-block"><i class="fa fa-graduation-cap"></i></div>
+                                    <div class="flot-left">
+                                       <h5>UNIVERSITAS ISLAM ATTAHIRIYAH</h5>
+                                       <h4 id="experience-14">Assistant Lecturer</h4>
+                                       <span id="experience-15">Feb 2022 - Jul 2022</span>
+                                    </div>
+                                 </div>
+                                 <div class="col-6 margin-bottom50 margin-top50 no-margin-top">
+                                    <ul>
+                                       <li id="experience-16">Assisting lecturers in teaching students in class.</li>
+                                       <li id="experience-17">Helping lecturers compile syllabus.</li>
+                                       <li id="experience-18">Compile complete exam questions with answers.</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="full-divider"></div>
+                              <div class="experience-details">
+                                 <div class="col-6 margin-bottom50 margin-top50">
+                                    <div class="col-3 icon-block"><i class="fa fa-medkit"></i></div>
+                                    <div class="flot-left">
+                                       <h5>PT. DIPA PHARMALAB INTERSAINS</h5>
+                                       <h4 id="experience-19">Marketing Supervisor</h4>
+                                       <span id="experience-20">Jul 2019 - Dec 2020</span>
+                                    </div>
+                                 </div>
+                                 <div class="col-6 margin-bottom50 margin-top50 no-margin-top">
+                                    <ul>
+                                       <li id="experience-21">Planned individual and team activities for target achievements.</li>
+                                       <li id="experience-22">Supervised and gave direction for team activities.</li>
+                                       <li id="experience-23">Developed strategies with teams related to target achievements.</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="full-divider"></div>
+                              <div class="experience-details">
+                                 <div class="col-6 margin-bottom50 margin-top50">
+                                    <div class="col-3 icon-block"><i class="fa fa-medkit"></i></div>
+                                    <div class="flot-left">
+                                       <h5>PT. DIPA PHARMALAB INTERSAINS</h5>
+                                       <h4 id="experience-24">Medical Representative</h4>
+                                       <span id="experience-25">Jun 2014 - Jul 2019</span>
+                                    </div>
+                                 </div>
+                                 <div class="col-6 margin-bottom50 margin-top50 no-margin-top">
+                                    <ul>
+                                       <li id="experience-26">Maintained a good relationship between doctor and company.</li>
+                                       <li id="experience-27">Improved sales performance every month.</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="full-divider"></div>
+                              <div class="experience-details">
+                                 <div class="col-6 margin-bottom50 margin-top50">
+                                    <div class="col-3 icon-block"><i class="fa fa-medkit"></i></div>
+                                    <div class="flot-left">
+                                       <h5>APOTEK SUKUN (Intern)</h5>
+                                       <h4 id="experience-28">Pharmacist Assistant</h4>
+                                       <span  id="experience-29">Mar 2013 - Sep 2013</span>
+                                    </div>
+                                 </div>
+                                 <div class="col-6 margin-bottom50 margin-top50 no-margin-top">
+                                    <ul>
+                                       <li id="experience-30">Sold pharmacy products.</li>
+                                       <li id="experience-31">Dispensing medicine according to a doctor's prescription.</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </article>
+               <!-- Education -->
+               <article class="content education gray-bg" id="chaptereducation">
+                  <div class="inner">
+                     <h2 id="education-1">Education</h2>
+                     <div class="title-divider"></div>
+                     <h3 id="education-2">Just My Education</h3>
+                     <p id="education-3">
+                        The education I took and graduated in that field.
+                     </p>
+                     <div class="education-con">
+                        <div class="container-sub">
+                           <div class="full-divider"></div>
+                           <div class="row">
+                              <div class="education-details">
+                                 <div class="col-6 margin-bottom50 margin-top50">
+                                    <div class="col-3 icon-block"><i class="fa fa-laptop"></i></div>
+                                    <div class="flot-left">
+                                       <h5>UNIVERSITAS MERCU BUANA</h5>
+                                       <h4 id="education-4" style="font-size:18px">Bachelor of Information System</h4>
+                                       <span>2017 - 2021</span>
+                                    </div>
+                                 </div>
+                                 <div class="col-6 margin-bottom50 margin-top50 no-margin-top"> 
+                                    <strong>GPA 3.64/4.00</strong> <br>
+                                    <span id="education-5">Thesis: Android-Based Medical Representative Visit Application</span>
+                                 </div>
+                              </div>
+                              <div class="full-divider"></div>
+                              <div class="education-details">
+                                 <div class="col-6 margin-bottom50 margin-top50">
+                                    <div class="col-3 icon-block"><i class="fa fa-medkit"></i></div>
+                                    <div class="flot-left">
+                                       <h5>SMK Yayasan Pharmasi</h5>
+                                       <h4 id="education-6" style="font-size:18px">Pharmaceutical Marketing</h4>
+                                       <span>2011 - 2014</span>
+                                    </div>
+                                 </div>
+                                 <div style="visibility:hidden;" class="col-6 margin-bottom50 margin-top50 no-margin-top">
+                                    ----------------------------------------------------------------------------------------------------
+                                 </div>
+                              </div>
+                              <div class="full-divider"></div>
+                              <div class="education-details">
+                                 <div class="col-6 margin-bottom50 margin-top50">
+                                    <div class="col-3 icon-block"><i class="fa fa-building-o"></i></div>
+                                    <div class="flot-left">
+                                       <h5>SMP Negeri 2 Gubug</h5>
+                                       <h4 style="font-size:18px"></h4>
+                                       <span>2008 - 2011</span>
+                                    </div>
+                                 </div>
+                                 <div style="visibility:hidden;" class="col-6 margin-bottom50 margin-top50 no-margin-top">
+                                    ----------------------------------------------------------------------------------------------------
+                                 </div>
+                              </div>
+                              <div class="full-divider"></div>
+                              <div class="education-details">
+                                 <div class="col-6 margin-bottom50 margin-top50">
+                                    <div class="col-3 icon-block"><i class="fa fa-building-o"></i></div>
+                                    <div class="flot-left">
+                                       <h5>SD Negeri 1 Sambung</h5>
+                                       <h4 style="font-size:18px"></h4>
+                                       <span>2002 - 2008</span>
+                                    </div>
+                                 </div>
+                                 <div style="visibility:hidden;" class="col-6 margin-bottom50 margin-top50 no-margin-top">
+                                    ----------------------------------------------------------------------------------------------------
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </article>
+               <!-- Portfolio -->
+               <article class="content portfolio white-bg" id="chapterportfolio">
+                  <div class="inner">
+                     <h2 id="portofolio-1">Portfolio</h2>
+                     <div class="title-divider"></div>
+                     <h3 id="portofolio-2">My portfolio features a variety of projects</h3>
+                     <p id="portofolio-3">
+                        Some of the website creation projects that I have worked on so far.
+                     </p>
+                     <div class="portfolio-con">
+                        <div class="container-sub margin-top50">
+                           <div class="row">
+                              <div id="grid-gallery" class="grid-gallery">
+                                 <section class="grid-wrap">
+                                    <ul class="grid">
+                                       <li>
+                                          <figure>
+                                             <img class="cover-portofolio" src="assets/images/portofolio/p-10-fundo-1.png" alt=""/>
+                                             <figcaption>
+                                                <div class="figcaption-details">
+                                                   <img src="assets/images/icon-plus.png" height="82" width="82" alt="" />
+                                                   <h3>Funding Platform</h3>
+                                                   <span></span>
+                                                </div>
+                                             </figcaption>
+                                          </figure>
+                                       </li>
+                                       <li>
+                                          <figure>
+                                             <img class="cover-portofolio" src="assets/images/portofolio/p-1-ubbu-toko-1.png" alt=""/>
+                                             <figcaption>
+                                                <div class="figcaption-details">
+                                                   <img src="assets/images/icon-plus.png" height="82" width="82" alt="" />
+                                                   <h3>E-commerce with many Outlet</h3>
+                                                   <span></span>
+                                                </div>
+                                             </figcaption>
+                                          </figure>
+                                       </li>
+                                       <li>
+                                          <figure>
+                                             <img class="cover-portofolio" src="assets/images/portofolio/p-1-ubbu-niaga-1.png" alt=""/>
+                                             <figcaption>
+                                                <div class="figcaption-details">
+                                                   <img src="assets/images/icon-plus.png" height="82" width="82" alt="" />
+                                                   <h3>Reconcile Invoice Real Time</h3>
+                                                   <span></span>
+                                                </div>
+                                             </figcaption>
+                                          </figure>
+                                       </li>
+                                       <li>
+                                          <figure>
+                                             <img class="cover-portofolio" src="assets/images/portofolio/p-1-karierku-1.png" alt=""/>
+                                             <figcaption>
+                                                <div class="figcaption-details">
+                                                   <img src="assets/images/icon-plus.png" height="82" width="82" alt="" />
+                                                   <h3>Job Portal & Training Center</h3>
+                                                   <span></span>
+                                                </div>
+                                             </figcaption>
+                                          </figure>
+                                       </li>
+                                       <li>
+                                          <figure>
+                                             <img class="cover-portofolio" src="assets/images/portofolio/p-2-ipkbi-1.png" alt=""/>
+                                             <figcaption>
+                                                <div class="figcaption-details">
+                                                   <img src="assets/images/icon-plus.png" height="82" width="82" alt="" />
+                                                   <h3>IPKBI Web</h3>
+                                                   <span></span>
+                                                </div>
+                                             </figcaption>
+                                          </figure>
+                                       </li>
+                                       <li>
+                                          <figure>
+                                             <img class="cover-portofolio" src="assets/images/portofolio/p-3-e-skp-1.png" alt="" />
+                                             <figcaption>
+                                                <div class="figcaption-details">
+                                                   <img src="assets/images/icon-plus.png" height="82" width="82" alt="" />
+                                                   <h3>Customer Satisfaction</h3>
+                                                   <span></span>
+                                                </div>
+                                             </figcaption>
+                                          </figure>
+                                       </li>
+                                       <li>
+                                          <figure>
+                                             <img class="cover-portofolio" src="assets/images/portofolio/p-4-e-document-1.png" alt="" />
+                                             <figcaption>
+                                                <div class="figcaption-details">
+                                                   <img src="assets/images/icon-plus.png" height="82" width="82" alt="" />
+                                                   <h3>E-Document</h3>
+                                                   <span></span>
+                                                </div>
+                                             </figcaption>
+                                          </figure>
+                                       </li>
+                                       <li>
+                                          <figure>
+                                             <img class="cover-portofolio" src="assets/images/portofolio/p-5-e-procurement-1.png" alt="" />
+                                             <figcaption>
+                                                <div class="figcaption-details">
+                                                   <img src="assets/images/icon-plus.png" height="82" width="82" alt="" />
+                                                   <h3>E-Procurement Product</h3>
+                                                   <span></span>
+                                                </div>
+                                             </figcaption>
+                                          </figure>
+                                       </li>
+                                       <li>
+                                          <figure>
+                                             <img class="cover-portofolio" src="assets/images/portofolio/p-6-panarub-1.png" alt="" />
+                                             <figcaption>
+                                                <div class="figcaption-details">
+                                                   <img src="assets/images/icon-plus.png" height="82" width="82" alt="" />
+                                                   <h3>Panarub Inventory</h3>
+                                                   <span></span>
+                                                </div>
+                                             </figcaption>
+                                          </figure>
+                                       </li>
+                                       <li>
+                                          <figure>
+                                             <img class="cover-portofolio" src="assets/images/portofolio/p-7-proteknik-1.png" alt="" />
+                                             <figcaption>
+                                                <div class="figcaption-details">
+                                                   <img src="assets/images/icon-plus.png" height="82" width="82" alt="" />
+                                                   <h3>Proteknik Service</h3>
+                                                   <span></span>
+                                                </div>
+                                             </figcaption>
+                                          </figure>
+                                       </li>
+                                       <li>
+                                          <figure>
+                                             <img class="cover-portofolio" src="assets/images/portofolio/p-8-sezone-1.png" alt="" />
+                                             <figcaption>
+                                                <div class="figcaption-details">
+                                                   <img src="assets/images/icon-plus.png" height="82" width="82" alt="" />
+                                                   <h3>School Zone</h3>
+                                                   <span></span>
+                                                </div>
+                                             </figcaption>
+                                          </figure>
+                                       </li>
+                                       <li>
+                                          <figure>
+                                             <img class="cover-portofolio" src="assets/images/portofolio/p-9-wedding-1.png" alt="" />
+                                             <figcaption>
+                                                <div class="figcaption-details">
+                                                   <img src="assets/images/icon-plus.png" height="82" width="82" alt="" />
+                                                   <h3>Wedding Invititation</h3>
+                                                   <span></span>
+                                                </div>
+                                             </figcaption>
+                                          </figure>
+                                       </li>
+                                       <li>
+                                          <figure>
+                                             <img class="cover-portofolio" src="assets/images/portofolio/p-10-backoffice-1.png" alt="" />
+                                             <figcaption>
+                                                <div class="figcaption-details">
+                                                   <img src="assets/images/icon-plus.png" height="82" width="82" alt="" />
+                                                   <h3>Backoffice Web</h3>
+                                                   <span></span>
+                                                </div>
+                                             </figcaption>
+                                          </figure>
+                                       </li>
+                                    </ul>
+                                 </section>
+                                 <!-- Lightbox Popup -->
+                                 <section class="slideshow">
+                                    <ul>
+                                       <!-- Fundo -->
+                                       <li>
+                                          <figure>
+                                             <figcaption>
+                                                <h3>Fundo</h3>
+                                                <span id="portofolio-14">Website Fintech Funding Platform</span>
+                                                <p>
+                                                   <a target="_blank" href="https://test-account.fundo.id" class="button-demo">DEMO!</a>
+                                                </p>
+                                             </figcaption>
+                                             <div id="owl-demo1" class="owl-carousel">
+                                                <div class="item"><img src="assets/images/portofolio/p-10-fundo-1.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-10-fundo-2.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-10-fundo-3.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-10-fundo-4.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-10-fundo-5.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-10-fundo-6.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-10-fundo-7.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-10-fundo-8.png" alt="" /></div>
+                                             </div>
+                                          </figure>
+                                       </li>
+                                       <!-- Ubbu Toko -->
+                                       <li>
+                                          <figure>
+                                             <figcaption>
+                                                <h3>Ubbu Toko</h3>
+                                                <span id="portofolio-4">Website E-Commerce with many Outlet</span>
+                                                <p>
+                                                   <a target="_blank" href="https://cart.ubbu.id" class="button-demo">DEMO!</a>
+                                                </p>
+                                             </figcaption>
+                                             <div id="owl-demo1" class="owl-carousel">
+                                                <div class="item"><img src="assets/images/portofolio/p-1-ubbu-toko-1.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-1-ubbu-toko-2.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-1-ubbu-toko-3.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-1-ubbu-toko-4.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-1-ubbu-toko-5.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-1-ubbu-toko-6.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-1-ubbu-toko-7.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-1-ubbu-toko-8.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-1-ubbu-toko-9.png" alt="" /></div>
+                                             </div>
+                                          </figure>
+                                       </li>
+                                       <!-- Ubbu Niaga -->
+                                       <li>
+                                          <figure>
+                                             <figcaption>
+                                                <h3>Ubbu Niaga</h3>
+                                                <span id="portofolio-4">Website Reconcile Invoice Real Time</span>
+                                                <p>
+                                                   <a target="_blank" href="https://niaga.ubbu.id" class="button-demo">DEMO!</a>
+                                                </p>
+                                             </figcaption>
+                                             <div id="owl-demo1" class="owl-carousel">
+                                                <div class="item"><img src="assets/images/portofolio/p-1-ubbu-niaga-1.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-1-ubbu-niaga-2.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-1-ubbu-niaga-3.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-1-ubbu-niaga-4.png" alt="" /></div>
+                                             </div>
+                                          </figure>
+                                       </li>
+                                       <!-- Karierku -->
+                                       <li>
+                                          <figure>
+                                             <figcaption>
+                                                <h3>Karierku</h3>
+                                                <span id="portofolio-4">Website Job Portal & Training Center</span>
+                                                <p>
+                                                   <a target="_blank" href="https://karierku.com" class="button-demo">DEMO!</a>
+                                                </p>
+                                             </figcaption>
+                                             <div id="owl-demo1" class="owl-carousel">
+                                                <div class="item"><img src="assets/images/portofolio/p-1-karierku-1.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-1-karierku-2.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-1-karierku-3.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-1-karierku-4.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-1-karierku-5.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-1-karierku-6.png" alt="" /></div>
+                                             </div>
+                                          </figure>
+                                       </li>
+                                       <!-- IPKBI -->
+                                       <li>
+                                          <figure>
+                                             <figcaption>
+                                                <h3>IPKBI</h3>
+                                                <span id="portofolio-5">Website Company Profile & Manage Member</span>
+                                                <p>
+                                                   <a target="_blank" href="https://ipkbi.org" class="button-demo">DEMO!</a>
+                                                </p>
+                                             </figcaption>
+                                             <div id="owl-demo1" class="owl-carousel">
+                                                <div class="item"><img src="assets/images/portofolio/p-2-ipkbi-1.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-2-ipkbi-2.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-2-ipkbi-3.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-2-ipkbi-4.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-2-ipkbi-5.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-2-ipkbi-6.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-2-ipkbi-7.png" alt="" /></div>
+                                             </div>
+                                          </figure>
+                                       </li>
+                                       <!-- E-SKP -->
+                                       <li>
+                                          <figure>
+                                             <figcaption>
+                                                <h3>E-SKP</h3>
+                                                <span id="portofolio-6">Website Customer Satisfaction Apotek Roxy</span>
+                                                <p>
+                                                   <a target="_blank" href="https://eskp.system-apotekroxy.com/user/01" class="button-demo">DEMO!</a>
+                                                </p>
+                                             </figcaption>
+                                             <div id="owl-demo1" class="owl-carousel">
+                                                <div class="item"><img src="assets/images/portofolio/p-3-e-skp-1.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-3-e-skp-2.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-3-e-skp-3.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-3-e-skp-4.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-3-e-skp-5.png" alt="" /></div>
+                                             </div>
+                                          </figure>
+                                       </li>
+                                       <!-- E-Document -->
+                                       <li>
+                                          <figure>
+                                             <figcaption>
+                                                <h3>E-Document</h3>
+                                                <span id="portofolio-7">Website Electronic Document Apotek Roxy</span>
+                                                <p>
+                                                   <a target="_blank" href="javascript:void(0);" class="button-demo">DEMO!</a>
+                                                </p>
+                                             </figcaption>
+                                             <div id="owl-demo1" class="owl-carousel">
+                                                <div class="item"><img src="assets/images/portofolio/p-4-e-document-1.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-4-e-document-2.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-4-e-document-3.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-4-e-document-4.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-4-e-document-5.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-4-e-document-6.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-4-e-document-7.png" alt="" /></div>
+                                             </div>
+                                          </figure>
+                                       </li>
+                                       <!-- E-Procurement -->
+                                       <li>
+                                          <figure>
+                                             <figcaption>
+                                                <h3>E-Procurement Product</h3>
+                                                <span id="portofolio-8">Website E-Procurement Product Apotek Roxy</span>
+                                                <p>
+                                                   <a target="_blank" href="javascript:void(0);" class="button-demo">DEMO!</a>
+                                                </p>
+                                             </figcaption>
+                                             <div id="owl-demo1" class="owl-carousel">
+                                                <div class="item"><img src="assets/images/portofolio/p-5-e-procurement-1.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-5-e-procurement-2.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-5-e-procurement-3.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-5-e-procurement-4.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-5-e-procurement-5.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-5-e-procurement-6.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-5-e-procurement-7.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-5-e-procurement-8.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-5-e-procurement-9.png" alt="" /></div>
+                                             </div>
+                                          </figure>
+                                       </li>
+                                       <!-- Panarub -->
+                                       <li>
+                                          <figure>
+                                             <figcaption>
+                                                <h3>Inventory Panarub Industry</h3>
+                                                <span id="portofolio-9">Website Maintenance Stock Moving & Non Moving</span>
+                                                <p>
+                                                   <a target="_blank" href="https://panarub.htn-tech.com" class="button-demo">DEMO!</a>
+                                                </p>
+                                             </figcaption>
+                                             <div id="owl-demo1" class="owl-carousel">
+                                                <div class="item"><img src="assets/images/portofolio/p-6-panarub-1.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-6-panarub-2.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-6-panarub-3.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-6-panarub-4.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-6-panarub-5.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-6-panarub-6.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-6-panarub-7.png" alt="" /></div>
+                                             </div>
+                                          </figure>
+                                       </li>
+                                       <!-- Proteknik -->
+                                       <li>
+                                          <figure>
+                                             <figcaption>
+                                                <h3>Proteknik Service</h3>
+                                                <span id="portofolio-10">Website Customer Service Proteknik Mega Persada</span>
+                                                <p>
+                                                   <a target="_blank" href="https://proteknikserv.com" class="button-demo">DEMO!</a>
+                                                </p>
+                                             </figcaption>
+                                             <div id="owl-demo1" class="owl-carousel">
+                                                <div class="item"><img src="assets/images/portofolio/p-7-proteknik-1.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-7-proteknik-2.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-7-proteknik-3.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-7-proteknik-4.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-7-proteknik-5.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-7-proteknik-6.png" alt="" /></div>
+                                             </div>
+                                          </figure>
+                                       </li>
+                                       <!-- Sezone -->
+                                       <li>
+                                          <figure>
+                                             <figcaption>
+                                                <h3>Sezone</h3>
+                                                <span id="portofolio-11">Website helping students find information and location of the nearest school</span>
+                                                <p>
+                                                   <a target="_blank" href="https://sezone.htn-tech.com" class="button-demo">DEMO!</a>
+                                                </p>
+                                             </figcaption>
+                                             <div id="owl-demo1" class="owl-carousel">
+                                                <div class="item"><img src="assets/images/portofolio/p-8-sezone-1.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-8-sezone-2.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-8-sezone-3.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-8-sezone-4.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-8-sezone-5.png" alt="" /></div>
+                                             </div>
+                                          </figure>
+                                       </li>
+                                       <!-- Wedding -->
+                                       <li>
+                                          <figure>
+                                             <figcaption>
+                                                <h3>Wedding</h3>
+                                                <span id="portofolio-12">Website Wedding Invitation </span>
+                                                <p>
+                                                   <a target="_blank" href="https://ulem-ulem.com" class="button-demo">DEMO!</a>
+                                                </p>
+                                             </figcaption>
+                                             <div id="owl-demo1" class="owl-carousel">
+                                                <div class="item"><img src="assets/images/portofolio/p-9-wedding-1.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-9-wedding-1.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-9-wedding-1.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-9-wedding-1.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-9-wedding-1.png" alt="" /></div>
+                                             </div>
+                                          </figure>
+                                       </li>
+                                       <!-- Backoffice -->
+                                       <li>
+                                          <figure>
+                                             <figcaption>
+                                                <h3>Backoffice</h3>
+                                                <span id="portofolio-13">Website Backoffice Apotek Roxy</span>
+                                                <p>
+                                                   <a target="_blank" href="javascript:void(0);" class="button-demo">DEMO!</a>
+                                                </p>
+                                             </figcaption>
+                                             <div id="owl-demo1" class="owl-carousel">
+                                                <div class="item"><img src="assets/images/portofolio/p-10-backoffice-1.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-10-backoffice-1.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-10-backoffice-1.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-10-backoffice-1.png" alt="" /></div>
+                                                <div class="item"><img src="assets/images/portofolio/p-10-backoffice-1.png" alt="" /></div>
+                                             </div>
+                                          </figure>
+                                       </li>
+                                    </ul>
+                                    <nav> <span class="fa nav-prev">
+                                       </span> <span class="fa nav-next"></span> <span class="fa nav-close"></span>
+                                    </nav>
+                                 </section>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </article>
+               <!-- Contact -->
+               <article class="content contact gray-bg" id="chaptercontact">
+                  <div class="inner">
+                     <h2 id="contact-1">Contact</h2>
+                     <div class="title-divider"></div>
+                     <h3 id="contact-2">Let's Keep In Touch</h3>
+                     <p id="contact-3">
+                        Contact me via the options below to get to know more.
+                     </p>
+                     <div class="full-divider"></div>
+                     <div class="contact-con margin-top50">
+                        <div class="container-sub">
+                           <div class="row">
+                              <div class="contact-details">
+                                 <div class="col-6">
+                                    <div class="contact-text">
+                                       <div class="col-2 icon-block address"><i class="fa fa-map-marker"></i></div>
+                                       <div class="flot-left"> 
+                                          <strong>Sri Hartono</strong><br>
+                                          Jl. Attahiriyah No.64C Pejaten Barat <br> 
+                                          Pasar Minggu, Jakarta Selatan
+                                       </div>
+                                    </div>
+                                    <div class="contact-text">
+                                       <div class="col-2 icon-block phone"><i class="fa fa-phone"></i></div>
+                                       <div class="flot-left"> 
+                                          <strong id="contact-4">Phone</strong><br>
+                                          <a href="https://api.whatsapp.com/send?phone=6281210681590">0812-1068-1590</a>
+                                       </div>
+                                    </div>
+                                    <div class="contact-text">
+                                       <div class="col-2 icon-block email"><i class="fa fa-envelope"></i></div>
+                                       <div class="flot-left"> 
+                                          <strong>Email</strong><br>
+                                          <a href="mailto:srihartonohs@gmail.com">srihartonohs@gmail.com</a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-6 m-margin-top30">
+                                    <h3 id="contact-5">I'm also on Social Networks</h3>
+                                    <span id="contact-6">Contact me via social networks</span>
+                                    <div class="contact-social margin-top30">
+                                       <a target="_blank" href="https://www.facebook.com/Sri.Hartonoo"><i class="fa fa-facebook"></i></a> 
+                                       <a target="_blank" href="https://twitter.com/hartonoosh"><i class="fa fa-twitter"></i></a> 
+                                       <a target="_blank" href="https://www.youtube.com/channel/UC-QhRXGe_q3Xwjj-s5A336g"><i class="fa fa-youtube"></i></a>
+                                       <a target="_blank" href="https://www.instagram.com/hartonoosh"><i class="fa fa-instagram"></i></a>
+                                       <a target="_blank" href="https://www.linkedin.com/in/srihartono"><i class="fa fa-linkedin"></i></a> 
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </article>
+               <!-- Thankyu -->
+               <article class="content introduction-end" id="chapterthankyou">
+                  <div class="inner">
+                     <div class="introduction-end-con margin-top50">
+                        <h3><strong>Sri Hartono</strong></h3>
+                        <div id="rotate" class="rotate">
+                           <div><span id="thankyu-1">awesome</span></div>
+                           <div><span id="thankyu-2">smart work</span></div>
+                           <div><span id="thankyu-3">good communication</span></div>
+                        </div>
+                     </div>
+                  </div>
+               </article>
+            </div>
+         </div>
       </div>
-    </div>
-  </section>
-
-  <section id="skills" class="pb-5">
-    <h2 class="h3">Skill</h2>
-    <div class="row g-3">
-      <div class="col-md-4">
-        <div class="bg-white p-4 rounded-4 h-100">
-          <h6 class="text-uppercase text-secondary">Backend</h6>
-          <ul class="m-0">
-            <li>Laminas (Zend), Laravel</li>
-            <li>Node.js</li>
-            <li>REST/GraphQL</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="bg-white p-4 rounded-4 h-100">
-          <h6 class="text-uppercase text-secondary">Frontend</h6>
-          <ul class="m-0">
-            <li>React, jQuery</li>
-            <li>Bootstrap, Tailwind</li>
-            <li>Axios, SweetAlert2</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="bg-white p-4 rounded-4 h-100">
-          <h6 class="text-uppercase text-secondary">Lainnya</h6>
-          <ul class="m-0">
-            <li>MySQL/PostgreSQL, Redis</li>
-            <li>CI/CD, Docker dasar</li>
-            <li>Git & GitHub Actions</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="pb-5">
-    <h2 class="h3">Kontak</h2>
-    <p class="text-secondary">Terbuka untuk project freelance dan kolaborasi.</p>
-    <div class="d-flex gap-2">
-      <a class="btn btn-dark" href="mailto:emailkamu@domain.com"><i class="bi bi-envelope"></i> Email</a>
-      <a class="btn btn-outline-dark" href="https://wa.me/6281234567890" target="_blank"><i class="bi bi-whatsapp"></i> WhatsApp</a>
-      <a class="btn btn-outline-dark" href="https://linkedin.com/in/username" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
-    </div>
-  </section>
-</main>
-
-<footer class="py-4">
-  <div class="container text-center small">
-    © <span id="y"></span> Nama Kamu · Dibuat dengan GitHub Pages
-  </div>
-</footer>
-
-<!-- jQuery + Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  // contoh kecil pakai jQuery: auto set tahun
-  $('#y').text(new Date().getFullYear());
-</script>
-</body>
+      <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+      <script type="text/javascript" src="assets/js/head.min.js"></script>
+      <script type="text/javascript" src="assets/js/imagesloaded.min.js"></script> 
+      <script type="text/javascript" src="assets/js/masonry.min.js"></script> 
+      <script type="text/javascript" src="assets/js/class_helper.js"></script> 
+      <script type="text/javascript" src="assets/js/grid_gallery.js"></script> 
+      <script>
+         new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+      </script>
+      <script type="text/javascript" src="assets/js/carousel.js"></script> 
+      <script type="text/javascript" src="assets/js/jquery.easypiechart.js"></script> 
+      <script type="text/javascript" src="assets/js/text.rotator.js"></script>
+      <script>
+         head.js(
+         { mousewheel    : "js/jquery.mousewheel.js" },
+         { mwheelIntent  : "js/mwheelIntent.js" },
+         { jScrollPane   : "js/jquery.jscrollpane.min.js" },
+         { history       : "js/jquery.history.js" },
+         { stringLib     : "js/core.string.js" },
+         { easing        : "js/jquery.easing.1.3.js" },
+         { smartresize   : "js/jquery.smartresize.js" },
+         { page          : "js/jquery.page.js" }
+         );
+      </script> 
+      <script type="text/javascript"  src="assets/js/jquery.fitvids.js"></script>
+      <script src="assets/js/settings.js"></script>
+   </body>
 </html>
