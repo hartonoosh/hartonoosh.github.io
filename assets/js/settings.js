@@ -92,7 +92,7 @@ change language
 $(".language-sidebar").click(function () {
   let language = $("#language-sidebar").attr("alt");
   if (language == "Indonesia") {
-    $("#language-sidebar").attr("src", "images/uk.png");
+    $("#language-sidebar").attr("src", "assets/images/uk.png");
     $("#language-sidebar").attr("alt", "English");
     $("#text-language").text("English");
     /*
@@ -258,7 +258,7 @@ $(".language-sidebar").click(function () {
     $("#thankyu-2").text("Smart Work");
     $("#thankyu-3").text("Good Communication");
   } else {
-    $("#language-sidebar").attr("src", "images/id.png");
+    $("#language-sidebar").attr("src", "assets/images/id.png");
     $("#language-sidebar").attr("alt", "Indonesia");
     $("#text-language").text("Bahasa");
     /*
