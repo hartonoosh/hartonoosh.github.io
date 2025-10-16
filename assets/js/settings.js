@@ -439,7 +439,7 @@ $(".language-sidebar").click(function () {
 $(".change-language").click(function () {
   let language = $("#language-topbar").attr("alt");
   if (language == "Indonesia") {
-    $("#language-topbar").attr("src", "images/uk.png");
+    $("#language-topbar").attr("src", "assets/images/uk.png");
     $("#language-topbar").attr("alt", "English");
     /*
 				$.ajax({      
@@ -604,7 +604,7 @@ $(".change-language").click(function () {
     $("#thankyu-2").text("Smart Work");
     $("#thankyu-3").text("Good Communication");
   } else {
-    $("#language-topbar").attr("src", "images/id.png");
+    $("#language-topbar").attr("src", "assets/images/id.png");
     $("#language-topbar").attr("alt", "Indonesia");
     /*
 				$.ajax({      
